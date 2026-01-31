@@ -61,13 +61,9 @@ Classification is used to verify whether stability-informed feature selection tr
 - Feature quality is assessed along two independent axes:
   - **Stability**: quantified via coefficient of variation (CV)
   - **Discriminability**: quantified via symmetric Kullback–Leibler divergence
-
 - Features that are simultaneously stable and discriminative are identified using percentile-based criteria.
-
 - Neurophysiological plausibility is assessed using spatial topographies and distance-dependence controls.
-
 - Selected feature sets are evaluated in a **strictly temporal train–test protocol** and compared against CSP.
-
 ---
 
 ## Key Findings
@@ -90,19 +86,6 @@ Experiments are conducted on a **longitudinal ALS motor imagery EEG dataset** co
 - 19-channel 10–20 montage  
 
 The dataset is publicly available via the UCL Research Data Repository.
-
----
-
-## Intended Audience
-
-This repository is intended for researchers working on:
-
-- Non-stationarity in MI-BCIs  
-- EEG functional connectivity analysis  
-- Feature-space evaluation prior to graph-based or adaptive models  
-- Longitudinal and clinical BCI datasets  
-
-It is **not** intended as an online or production-ready BCI system.
 
 ---
 
