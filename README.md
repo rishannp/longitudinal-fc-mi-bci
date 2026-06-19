@@ -9,7 +9,7 @@ Rishan Patel, Barney Bryson, Tom Carlson, Andreas Demosthenous, Dai Jiang
 
 ## Motivation
 
-Motor imagery (MI) EEG-based brain–computer interfaces (BCIs) are fundamentally limited by **longitudinal non-stationarity**. Feature distributions drift across sessions due to physiological, behavioural, and disease-related factors—particularly in clinical populations such as amyotrophic lateral sclerosis (ALS). As a result, models trained on early calibration data often fail to generalise over time.
+Motor imagery (MI) EEG-based brain–computer interfaces (BCIs) are fundamentally limited by **longitudinal non-stationarity**. Feature distributions drift across sessions due to physiological, behavioural, and disease-related factors, particularly in clinical populations such as amyotrophic lateral sclerosis (ALS). As a result, models trained on early calibration data often fail to generalise over time.
 
 Functional connectivity (FC) has been proposed as an alternative feature space capable of capturing distributed neural dynamics. However, the field lacks clear guidance on **which connectivity estimators produce features that are both stable over time and discriminative between MI classes**.
 
@@ -44,7 +44,7 @@ Class separability is evaluated across the full empirical distributions of featu
 Connectivity features are validated against known MI-related sensorimotor organisation, rather than treated as abstract graph inputs.
 
 ### Decoding Is a Validation Step, Not the Goal  
-Classification is used to verify whether stability-informed feature selection translates into improved temporal generalisation—nothing more.
+Classification is used to verify whether stability-informed feature selection translates into improved temporal generalisation, nothing more.
 
 ---
 
@@ -69,7 +69,7 @@ Classification is used to verify whether stability-informed feature selection tr
 ## Key Findings
 
 - Stability and discriminability can co-exist at the feature level, but only for a subset of connectivity features.
-- Coherence-based metrics—particularly **magnitude-squared coherence (MSC)**—most consistently yield favourable stability–discriminability trade-offs across subjects.
+- Coherence-based metrics, particularly **magnitude-squared coherence (MSC)**—most consistently yield favourable stability–discriminability trade-offs across subjects.
 - Node-strength representations derived from FC exhibit structured, lateralised sensorimotor patterns consistent with MI physiology.
 - Stability-informed FC features demonstrate **more consistent cross-session decoding performance** than CSP for most subjects, under severe non-stationarity.
 - Metrics explicitly designed to suppress zero-lag coupling (e.g. PLI, wPLI, imaginary coherence) are not necessarily more robust under longitudinal drift.
